@@ -36,7 +36,7 @@ public class ProdutoService {
                 .map(produtoExistente -> {
                     produtoExistente.setNome(produto.getNome());
                     produtoExistente.setPreco(produto.getPreco());
-                    produtoExistente.setEstoque(produto.isEstoque());
+                    produtoExistente.setEstoque(produto.getEstoque());
                     return produtoRepository.save(produtoExistente);
                 })
                 .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
