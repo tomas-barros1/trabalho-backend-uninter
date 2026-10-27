@@ -13,7 +13,6 @@ public class Cliente {
 
     private String nome;
 
-    @CreatedDate
     private LocalDate clienteDesde;
 
     public Cliente(){}
@@ -21,7 +20,7 @@ public class Cliente {
     public Cliente(Long id, String nome, LocalDate clienteDesde) {
         this.id = id;
         this.nome = nome;
-        this.clienteDesde = clienteDesde;
+        this.clienteDesde = LocalDate.now();
     }
 
     public void setId(Long id) {
