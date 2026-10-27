@@ -17,11 +17,11 @@ public class Produto {
 
     private BigDecimal preco;
 
-    private boolean estoque;
+    private Boolean estoque;
 
     public Produto(){}
 
-    public Produto(Long id, String nome, BigDecimal preco, boolean estoque) {
+    public Produto(Long id, String nome, BigDecimal preco, Boolean estoque) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
@@ -52,11 +52,11 @@ public class Produto {
         this.preco = preco;
     }
 
-    public boolean isEstoque() {
+    public Boolean getEstoque() {
         return estoque;
     }
 
-    public void setEstoque(boolean estoque) {
+    public void setEstoque(Boolean estoque) {
         this.estoque = estoque;
     }
 }
